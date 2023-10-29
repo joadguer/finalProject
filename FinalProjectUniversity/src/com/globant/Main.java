@@ -3,7 +3,7 @@ package com.globant;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
-import com.globant.universitySystem.*;
+import com.globant.univeristySystem.*;
 import com.globant.users.*;
 import com.globant.util.*;
 

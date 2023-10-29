@@ -1,7 +1,7 @@
 package com.globant.util;
 
-import com.globant.universitySystem.Classes;
-import com.globant.universitySystem.University;
+import com.globant.univeristySystem.Classes;
+import com.globant.univeristySystem.University;
 import com.globant.users.Student;
 import com.globant.users.Teacher;
 

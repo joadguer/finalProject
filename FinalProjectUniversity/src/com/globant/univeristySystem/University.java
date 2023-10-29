@@ -2,6 +2,7 @@ package com.globant.univeristySystem;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 import com.globant.users.Teacher;
 import com.globant.users.Student;
@@ -55,5 +56,15 @@ public class University {
         else
             sb.append("There is not Students");
         return sb;
+    }
+
+    public static void addTeachers(Teacher... teachersToAdd) {
+        Collections.addAll(teachers, teachersToAdd);
+    }
+    public static void addStudents(Student... StudentsToAdd) {
+        Collections.addAll(students, StudentsToAdd);
+    }
+    public static void addClasses(Classes... ClassesToAdd) {
+        Collections.addAll(classes, ClassesToAdd);
     }
 }
