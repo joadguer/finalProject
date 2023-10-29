@@ -30,7 +30,9 @@ public class Student {
 
         Student newStudent = new Student(name, studentId, age);
 
-        //methods to get all the student
+        //methods to get all the student and add it to the list
+
+        return newStudent;
 
     }
 
