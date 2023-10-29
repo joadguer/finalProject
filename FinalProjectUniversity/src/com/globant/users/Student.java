@@ -15,6 +15,10 @@ public class Student {
 
     public String getName() { return name; }
 
+    public int getId() {
+        return id;
+    }
+
     public static Student createNewStudent(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the name of the new student:");

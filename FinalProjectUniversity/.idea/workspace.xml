@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee6c7ac0-9f0f-46ac-a05d-cda8a34a6d91" name="Changes" comment="" />
+    <list default="true" id="ee6c7ac0-9f0f-46ac-a05d-cda8a34a6d91" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/globant/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/globant/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/globant/users/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/globant/users/Student.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +35,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "universitySystem"
+    "git-widget-placeholder": "main"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -44,5 +48,17 @@
       <updated>1698549408327</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/com/globant/users/Student.java</url>
+          <line>7</line>
+          <properties field="age" class="com.globant.users.Student" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
