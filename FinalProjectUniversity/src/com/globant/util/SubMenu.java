@@ -1,6 +1,6 @@
 package com.globant.util;
 
-import com.globant.univeristySystem.University;
+import com.globant.university.University;
 
 import java.util.Scanner;
 

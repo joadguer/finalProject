@@ -1,6 +1,5 @@
-package com.globant.univeristySystem;
+package com.globant.university;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
@@ -11,7 +10,7 @@ import com.globant.users.Student;
 public class University {
     private static ArrayList<Student> students = new ArrayList<>();
     private static ArrayList<Teacher> teachers = new ArrayList<>();
-    private static ArrayList<Classes> classes = new ArrayList<>();
+    private static ArrayList<Klass> klasses = new ArrayList<>();
 
     public static ArrayList<Student> getStudents() {
         return students;
@@ -21,30 +20,35 @@ public class University {
         return teachers;
     }
 
-    public static ArrayList<Classes> getClasses(){ return classes; }
+    public static ArrayList<Klass> getClasses(){ return klasses; }
 
     public static void l_ClassByIdStudent() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the id of the student: ");
-        int id= scanner.nextInt();
+        int id;
+        try {
+            id = scanner.nextInt();
 
-        scanner.nextLine();
-        ArrayList<Classes> l_classes = new ArrayList<>();
+            scanner.nextLine();
+            ArrayList<Klass> l_classes = new ArrayList<>();
 
-        for(Classes klass : classes){
-            for(Student student: klass.getStudents()) {
-                if(student.getId() == id){
-                    l_classes.add(klass);
+            for (Klass klass : klasses) {
+                for (Student student : klass.getStudents()) {
+                    if (student.getId() == id) {
+                        l_classes.add(klass);
+                    }
                 }
             }
-        }
 
-        if(l_classes.size() != 0){
-            int i = 1;
-            for(Classes klass : l_classes){
-                System.out.println((i)+". "+klass.getName()+"\t"+klass.getClassroom());
-                i++;
-            }
+            if (l_classes.size() != 0) {
+                int i = 1;
+                for (Klass klass : l_classes) {
+                    System.out.println((i) + ". " + klass.getName() + "\t" + klass.getClassroom());
+                    i++;
+                }
+            }else { System.out.println("There is no classes for this id"); }
+        }catch(Exception e){
+            System.out.println("Id is not valid");
         }
 
     }
@@ -64,7 +68,7 @@ public class University {
     public static void addStudents(Student... StudentsToAdd) {
         Collections.addAll(students, StudentsToAdd);
     }
-    public static void addClasses(Classes... ClassesToAdd) {
-        Collections.addAll(classes, ClassesToAdd);
+    public static void addClasses(Klass... klassToAdd) {
+        Collections.addAll(klasses, klassToAdd);
     }
 }

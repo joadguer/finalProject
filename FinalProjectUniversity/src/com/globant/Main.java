@@ -3,7 +3,7 @@ package com.globant;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
-import com.globant.univeristySystem.*;
+import com.globant.university.*;
 import com.globant.users.*;
 import com.globant.util.*;
 
@@ -15,7 +15,6 @@ public class Main {
         //Teachers
         Teacher teacher1 = new TeacherFullTime("John Doe", 5000, 5, 40);
         Teacher teacher2 = new TeacherFullTime("Jane Smith", 4000, 0, 40);
-
         Teacher teacher3 = new TeacherPartTime("John Doe", 50, 20);
         Teacher teacher4 = new TeacherPartTime("Jane Smith", 40, 20);
 
@@ -30,19 +29,16 @@ public class Main {
         //Group of Students:
         ArrayList<Student> students = new ArrayList<>();
         Collections.addAll(students, student1, student2,student3,student4);
-
         ArrayList<Student> students2 = new ArrayList<>();
         Collections.addAll(students2,student5,student6);
-
         ArrayList<Student> students3 = new ArrayList<>();
         Collections.addAll(students3, student1, student2);
 
         //Classes
-        Classes class1 = new Classes("Math", "Room 101", teacher1, students);
-        Classes class2 = new Classes("Physics", "Room 202", teacher2, students3);
-
-        Classes class3 = new Classes("Biology", "Room 103", teacher3, students2);
-        Classes class4 = new Classes("Music", "Room 204", teacher4, students3);
+        Klass class1 = new Klass("Math", "Room 101", teacher1, students);
+        Klass class2 = new Klass("Physics", "Room 202", teacher2, students3);
+        Klass class3 = new Klass("Biology", "Room 103", teacher3, students2);
+        Klass class4 = new Klass("Music", "Room 204", teacher4, students3);
 
         //Adding data to Unieversity
         University.addStudents(student1,student2,student3,student4,student5,student6);

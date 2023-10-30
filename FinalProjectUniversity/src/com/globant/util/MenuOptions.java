@@ -1,7 +1,7 @@
 package com.globant.util;
 
-import com.globant.univeristySystem.Classes;
-import com.globant.univeristySystem.University;
+import com.globant.university.Klass;
+import com.globant.university.University;
 import com.globant.users.Student;
 import com.globant.users.Teacher;
 
@@ -15,7 +15,7 @@ public class MenuOptions {
     public static void printAllClass(){
         System.out.println("University Classes:");
         int i = 1;
-        for(Classes clss: University.getClasses())
+        for(Klass clss: University.getClasses())
         {
             System.out.println(i+".- "+ clss.getName());
             i++;
@@ -28,7 +28,7 @@ public class MenuOptions {
         //adding a new student to the class
         System.out.println("Enter the name of the class to enroll the student:");
         String klassName = scanner.nextLine();
-        for(Classes klass: University.getClasses()){
+        for(Klass klass: University.getClasses()){
             if (klass.getName().equals(klassName)){
                 klass.addStudent(studentToAdd);
                 System.out.println("Student Added Successfully");
